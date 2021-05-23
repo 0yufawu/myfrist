@@ -23,11 +23,14 @@ database.connect();
 router.post('/',(req,res) =>{
     //获取前端传递的参数
     //req.body.username
-    let user = new User(req.body.username,req.body.email,req.body.tel,req.body.pwd,req.body.pwd1);
+    let user = new User(req.body.username,req.body.email,req.body.tel,req.body.pwd,);
     console.log(user);
     var name = req.body.username;
     var password = req.body.pwd;
-    var query = 'insert into authorname values("' +name +'","'+password+'")';
+    var phone = req.body.tel;
+    var email = req.body.email;
+
+    var query = 'insert into authorname values("' +name +'","'+password+'","'+email+'" , "'+phone+'")';
     //var password1 = req.body.pwd1;
     // var query = 'insert into authorname values("' +name +'","'+password+'"," ' + password1 + '")';
     // database.query(query,function(req,res,next){

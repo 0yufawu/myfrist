@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+var mysql = require("mysql");
 /* GET home page. */
 //get请求方式，浏览器回车
 //'/'
@@ -20,4 +20,18 @@ router.get('/', function(req, res) {
 //   console.log('......');
 //   next();
 // })不写next不会往下走
+
+
+//数据库
+// var settings = {};
+// settings.db={
+//   host:"localhost",
+//   port:3306,
+//   user:"root",
+//   password:"123456",
+//   database:"movie"
+// }
+// settings.connect();
+
+
 module.exports = router;

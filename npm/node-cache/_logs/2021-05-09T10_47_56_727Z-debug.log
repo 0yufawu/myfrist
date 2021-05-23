@@ -1,0 +1,60 @@
+0 verbose cli [
+0 verbose cli   'D:\\node.js\\npm\\node.exe',
+0 verbose cli   'D:\\node.js\\npm\\node-global\\node_modules\\npm\\bin\\npm-cli.js',
+0 verbose cli   'install',
+0 verbose cli   '--ignore-scripts',
+0 verbose cli   'types-registry@latest'
+0 verbose cli ]
+1 info using npm@7.10.0
+2 info using node@v14.16.1
+3 timing npm:load:whichnode Completed in 3ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:D:\node.js\npm\node-global\node_modules\npm\npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:C:\Users\yu\AppData\Local\Microsoft\TypeScript\4.2\.npmrc Completed in 0ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:C:\Users\yu\.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:D:\node.js\npm\node-global\etc\npmrc Completed in 1ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:setEnvs Completed in 2ms
+17 timing config:load Completed in 14ms
+18 timing npm:load:configload Completed in 14ms
+19 timing npm:load:setTitle Completed in 0ms
+20 timing npm:load:setupLog Completed in 0ms
+21 timing npm:load:cleanupLog Completed in 3ms
+22 timing npm:load:configScope Completed in 0ms
+23 timing npm:load:projectScope Completed in 2ms
+24 timing npm:load Completed in 22ms
+25 timing config:load:flatten Completed in 3ms
+26 timing arborist:ctor Completed in 0ms
+27 timing idealTree:init Completed in 159ms
+28 timing idealTree Completed in 235ms
+29 timing command:install Completed in 242ms
+30 verbose type system
+31 verbose stack FetchError: request to https://registry.npm.taobao.org/types-registry failed, reason: getaddrinfo ENOTFOUND registry.npm.taobao.org
+31 verbose stack     at ClientRequest.<anonymous> (D:\node.js\npm\node-global\node_modules\npm\node_modules\minipass-fetch\lib\index.js:97:14)
+31 verbose stack     at ClientRequest.emit (events.js:315:20)
+31 verbose stack     at TLSSocket.socketErrorListener (_http_client.js:469:9)
+31 verbose stack     at TLSSocket.emit (events.js:327:22)
+31 verbose stack     at emitErrorNT (internal/streams/destroy.js:106:8)
+31 verbose stack     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+31 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:80:21)
+32 verbose cwd C:\Users\yu\AppData\Local\Microsoft\TypeScript\4.2
+33 verbose Windows_NT 10.0.19042
+34 verbose argv "D:\\node.js\\npm\\node.exe" "D:\\node.js\\npm\\node-global\\node_modules\\npm\\bin\\npm-cli.js" "install" "--ignore-scripts" "types-registry@latest"
+35 verbose node v14.16.1
+36 verbose npm  v7.10.0
+37 error code ENOTFOUND
+38 error syscall getaddrinfo
+39 error errno ENOTFOUND
+40 error network request to https://registry.npm.taobao.org/types-registry failed, reason: getaddrinfo ENOTFOUND registry.npm.taobao.org
+41 error network This is a problem related to network connectivity.
+41 error network In most cases you are behind a proxy or have bad network settings.
+41 error network
+41 error network If you are behind a proxy, please make sure that the
+41 error network 'proxy' config is set properly.  See: 'npm help config'
+42 verbose exit 1

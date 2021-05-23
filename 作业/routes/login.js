@@ -39,4 +39,11 @@ router.post('/',(req,res) =>{
   })
  
 });
+
+router.post("/l",function(req,res){
+  var name = req.body.name
+
+
+  res.json({"data":1})
+})
 module.exports = router;

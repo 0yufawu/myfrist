@@ -14,7 +14,28 @@ var playRouter = require('./routes/play');
 var usersRouter = require('./routes/users');
 var htaiRouter = require('./routes/htai');
 var gliRouter = require('./routes/gli');
+var haitRouter = require('./routes/hait');
+// //配置模块
+// var settings = require('./settings');
+// //连接数据库
+// var connection = mysql.createConnection(settings.db);
+// //查询
+// var selectSQL = 'select * from `mytable`';
 
+// var arr = [];
+// connection.query(selectSQL, function(err, rows) {
+//     if (err) throw err;
+//     for (var i = 0; i < rows.length; i++) {
+//         arr[i] = rows[i].name;
+//     }
+
+//     //把搜索值输出
+//     app.get('/', function(req, res) {
+//         res.send(arr);
+//     });
+//   });
+//   connection.end();
+//   app.listen(3000);
 
 var app = express();
 
@@ -36,6 +57,7 @@ app.use('/play', playRouter);
 app.use('/users',usersRouter);
 app.use('/htai',htaiRouter);
 app.use('/gli',gliRouter);
+app.use('/hait',haitRouter);
 
 
 app.use(express.json());
